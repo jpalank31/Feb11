@@ -12,20 +12,20 @@
           rgb(238, 56, 56) 0%,
           rgba(206, 21, 0, 0.92) 90.1%
         );
-        height: 100vh;
+        height: 110vh;
         text-align: center;
         font-family: Arial, sans-serif; /* Adding a fallback font */
-        max-width: 700px;
-        margin: 0 auto;
+        margin: 0;
+        padding: 0 10px;
       }
       h1 {
-        margin: 20px auto;
+        margin: 20px 0;
         font-size: 2.5rem; /* Responsive font size */
       }
 
       p {
         font-size: 1.5rem; /* Adjusted for readability */
-        padding: 0 10px; /* Padding for mobile */
+        padding: 10px; /* Padding for mobile */
         margin: 20px auto;
         max-width: 550px;
       }
@@ -35,14 +35,18 @@
       }
       .img1 {
         display: block;
-        margin: 30px auto;
         max-width: 100%;
-        width: 450px;
+        width: auto;
+        height: auto;
+        max-height: 400px;
+        margin: 30px auto;
         border: 1px solid #407088;
         border-radius: 0px;
       }
       .subp {
         font-size: 1.2rem;
+        max-width: 550px;
+        margin: 0 auto;
       }
       button {
         padding: 10px 20px; /* Increased padding for touch targets */
@@ -61,7 +65,7 @@
       /* Media Queries for Responsive Design */
       @media (max-width: 600px) {
         h1 {
-          font-size: 1.75rem; /* Smaller heading size */
+          font-size: 1.6rem; /* Smaller heading size */
         }
         p {
           font-size: 1.2rem; /* Smaller paragraph text */
@@ -74,6 +78,17 @@
         button {
           font-size: 0.9rem; /* Smaller button text */
           padding: 8px 16px; /* Adjust button padding */
+        }
+      }
+      @media (min-width: 601px) {
+        h1 {
+          font-size: 2.5rem; /* Larger heading size for desktop */
+        }
+        .p1 {
+          font-size: 1.5rem; /* Keep larger for desktop */
+        }
+        .subp {
+          font-size: 1.2rem; /* Keep larger for desktop */
         }
       }
     </style>
